@@ -32,17 +32,19 @@
   </head>
   <body>
     <div class="container">
+        
       <div class="form">
         <h3>Confira o clima de uma cidade:</h3>
         <div class="form-input-container">
           <input
           type="text"
           placeholder="Digite o nome da cidade"
-          id="city-input"
+          id="city-input" required
         />
         <button id="search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
+    
         </div>
       </div>
       <div id="weather-data" class="hide">
@@ -62,13 +64,14 @@
             <i class="fa-solid fa-wind"></i>
             <span></span>
           </p>
+          
         </div>
         
-        <p class="back_buttom"><a class="back" href="/">Voltar</a></p>
+        <button class="back" onclick="voltarPaginaPrincipal()">Voltar </button>
       </div>
       <div id="error-message" class="hide">
         <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
-        <p class="back_buttom"><a class="back" href="/">Voltar</a></p>
+        <button class="back" onclick="voltarPaginaPrincipal()">Voltar </button>
       </div>
       <div id="loader" class="hide">
         <i class="fa-solid fa-spinner"></i>

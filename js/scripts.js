@@ -96,3 +96,8 @@ suggestionButtons.forEach((btn) => {
     showWeatherData(city);
   });
 });
+
+
+function voltarPaginaPrincipal() {
+  window.location.href = '/';
+}
